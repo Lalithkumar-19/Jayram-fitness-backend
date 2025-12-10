@@ -6,6 +6,7 @@ const memberSchema = new mongoose.Schema({
     dob: { type: Date, required: true },
     gender: { type: String, enum: ['male', 'female', 'other'], default: 'male' },
     email: { type: String, required: true }, // Removed unique: true to avoid errors with duplicate dummy emails if any, can add later
+    mobile: { type: String, required: true },
     address: { type: String },
     occupation: { type: String },
     weight: { type: Number },
